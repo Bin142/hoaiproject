@@ -99,7 +99,8 @@ a {
   position: absolute;
   bottom: 12px;
   right: 20px;
-  font-size: 16px;
+  font-size: 22px;
+  font-weight: 700;
   color: #666;
 }
 
@@ -256,6 +257,15 @@ a {
 .voucher-img {
   width: 100%;
   display: block;
+}
+
+/* Mã số sinh viên dưới voucher */
+.student-id-bottom {
+  text-align: right;
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
 }
 
 /* ===== FOOTER: Phần cuối trang ===== */
