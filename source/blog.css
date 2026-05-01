@@ -1,4 +1,6 @@
-/* BREADCRUMB */
+/* ===== TRANG BÀI VIẾT ===== */
+
+/* ===== BREADCRUMB: Đường dẫn điều hướng (Trang chủ > Bài viết) ===== */
 .breadcrumb {
   padding: 16px 50px;
   font-size: 14px;
@@ -13,11 +15,12 @@
   color: #b5651d;
 }
 
+/* Trang hiện tại (không phải link) */
 .breadcrumb span {
   color: #333;
 }
 
-/* FEATURED POST */
+/* ===== BÀI VIẾT NỔI BẬT: Layout 2 cột (ảnh trái + nội dung phải) ===== */
 .featured-post {
   display: flex;
   align-items: center;
@@ -25,6 +28,7 @@
   padding: 20px 50px 50px;
 }
 
+/* Ảnh bài viết nổi bật, chiếm 50% */
 .featured-img {
   flex: 0 0 50%;
 }
@@ -35,6 +39,7 @@
   object-fit: cover;
 }
 
+/* Nội dung bài viết nổi bật */
 .featured-content {
   flex: 1;
 }
@@ -54,6 +59,7 @@
   margin-bottom: 24px;
 }
 
+/* Nút "Đọc bài viết" có gạch chân */
 .btn-read {
   display: inline-block;
   font-size: 16px;
@@ -68,11 +74,12 @@
   border-color: #8b4513;
 }
 
-/* BLOG CATEGORY SECTIONS */
+/* ===== CHUYÊN MỤC BÀI VIẾT (Làm đẹp, Cocoon) ===== */
 .blog-category {
   padding: 30px 50px;
 }
 
+/* Header chuyên mục: tiêu đề trái + "Tất cả bài viết" phải */
 .blog-category-header {
   display: flex;
   justify-content: space-between;
@@ -88,6 +95,7 @@
   color: #333;
 }
 
+/* Link "Tất cả bài viết" */
 .view-all {
   font-size: 16px;
   color: #b5651d;
@@ -98,34 +106,38 @@
   color: #8b4513;
 }
 
-/* BLOG LIST */
+/* ===== DANH SÁCH BÀI VIẾT: Các card xếp dọc ===== */
 .blog-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
+/* Mỗi bài viết: ảnh trái + nội dung phải */
 .blog-card {
   display: flex;
   gap: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;  /* Đường kẻ phân cách */
 }
 
+/* Ảnh thumbnail bài viết */
 .blog-card img {
   width: 260px;
   height: 180px;
   object-fit: contain;
   border-radius: 8px;
-  flex-shrink: 0;
+  flex-shrink: 0;             /* Không co lại khi thiếu chỗ */
 }
 
+/* Nội dung bài viết */
 .blog-card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Tag + Ngày đăng */
 .blog-meta {
   display: flex;
   align-items: center;
@@ -133,17 +145,20 @@
   margin-bottom: 10px;
 }
 
+/* Tag chuyên mục (VD: "Làm đẹp") */
 .blog-tag {
   font-size: 14px;
   font-weight: 700;
   color: #b5651d;
 }
 
+/* Ngày đăng bài */
 .blog-date {
   font-size: 14px;
   color: #999;
 }
 
+/* Tiêu đề bài viết */
 .blog-card-body h3 {
   font-size: 18px;
   font-weight: 700;
@@ -152,6 +167,7 @@
   margin-bottom: 10px;
 }
 
+/* Mô tả ngắn */
 .blog-card-body p {
   font-size: 16px;
   color: #666;
@@ -159,6 +175,7 @@
   margin-bottom: 12px;
 }
 
+/* Link "Đọc thêm" */
 .read-more {
   font-size: 16px;
   font-weight: 700;

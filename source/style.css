@@ -1,9 +1,11 @@
+/* ===== RESET: Xóa margin/padding mặc định của trình duyệt ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== BODY: Font chữ và màu nền chung cho toàn trang ===== */
 body {
   font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
   color: #333;
@@ -11,27 +13,30 @@ body {
   font-size: 18px;
 }
 
+/* Bỏ gạch chân cho tất cả link */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* HEADER */
+/* ===== HEADER: Thanh điều hướng trên cùng ===== */
 .header {
-  display: flex;
+  display: flex;              /* Dàn ngang: logo | nav | hotline */
   align-items: center;
   justify-content: space-between;
   padding: 12px 40px;
   background: #fff;
 }
 
+/* Logo nhỏ trên header */
 .logo img {
   height: 40px;
 }
 
+/* Menu điều hướng */
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 32px;                  /* Khoảng cách giữa các link */
 }
 
 .nav a {
@@ -39,25 +44,28 @@ a {
   color: #333;
 }
 
+/* Đổi màu khi hover vào link */
 .nav a:hover {
   color: #b5651d;
 }
 
+/* Số hotline bên phải */
 .hotline {
   font-size: 16px;
   font-weight: 500;
 }
 
-/* HERO */
+/* ===== HERO: Banner chính trang chủ ===== */
 .hero {
-  display: flex;
+  display: flex;              /* Dàn ngang: text trái | ảnh phải */
   align-items: center;
-  background: linear-gradient(135deg, #fdf6f0 0%, #f5e6da 100%);
+  background: linear-gradient(135deg, #fdf6f0 0%, #f5e6da 100%); /* Nền gradient ấm */
   min-height: 400px;
-  position: relative;
-  overflow: hidden;
+  position: relative;         /* Để định vị student-id */
+  overflow: hidden;           /* Cắt phần ảnh tràn ra ngoài */
 }
 
+/* Phần text slogan bên trái, chiếm 40% */
 .hero-text {
   flex: 0 0 40%;
   padding: 40px 50px;
@@ -70,6 +78,7 @@ a {
   color: #333;
 }
 
+/* Phần ảnh bên phải, đẩy sát mép phải */
 .hero-image {
   flex: 1;
   display: flex;
@@ -77,13 +86,15 @@ a {
   overflow: hidden;
 }
 
+/* Ảnh sản phẩm lớn, tràn ra mép phải */
 .hero-image img {
   width: 750px;
   height: auto;
   object-fit: contain;
-  margin-right: -40px;
+  margin-right: -40px;        /* Đẩy ảnh ra ngoài mép */
 }
 
+/* Mã số sinh viên góc phải dưới banner */
 .student-id {
   position: absolute;
   bottom: 12px;
@@ -92,11 +103,12 @@ a {
   color: #666;
 }
 
-/* PRODUCTS */
+/* ===== PRODUCTS: Danh mục + Sản phẩm nổi bật ===== */
 .products {
   padding: 40px 50px;
 }
 
+/* Tiêu đề "Danh mục sản phẩm" */
 .products h2 {
   font-size: 22px;
   font-weight: 700;
@@ -108,11 +120,13 @@ a {
   font-size: 16px;
 }
 
+/* Layout 2 cột: danh mục trái + sản phẩm phải */
 .products-content {
   display: flex;
   gap: 40px;
 }
 
+/* Danh mục bên trái, chiều rộng cố định */
 .category-list {
   flex: 0 0 180px;
   list-style: none;
@@ -130,10 +144,12 @@ a {
   color: #b5651d;
 }
 
+/* Phần sản phẩm nổi bật bên phải */
 .product-cards {
   flex: 1;
 }
 
+/* Tiêu đề "Sản phẩm nổi bật" */
 .product-cards-title {
   font-size: 22px;
   font-weight: 600;
@@ -143,22 +159,26 @@ a {
   color: #5a7a5a;
 }
 
+/* 3 card sản phẩm dàn ngang */
 .product-cards-list {
   display: flex;
   gap: 30px;
 }
 
+/* Mỗi card sản phẩm chiếm đều nhau */
 .product-card {
   flex: 1;
   text-align: center;
 }
 
+/* Ảnh sản phẩm */
 .product-card img {
   width: 100%;
   height: 380px;
-  object-fit: contain;
+  object-fit: contain;        /* Hiển thị trọn ảnh, không bị cắt */
 }
 
+/* Tên sản phẩm */
 .product-name {
   font-size: 18px;
   margin-top: 16px;
@@ -166,6 +186,7 @@ a {
   color: #333;
 }
 
+/* Giá sản phẩm (in đậm) */
 .product-price {
   font-weight: 700;
   font-size: 20px;
@@ -173,22 +194,23 @@ a {
   color: #333;
 }
 
-
-/* SLOGAN */
+/* ===== SLOGAN: Câu trích dẫn + Icon giá trị ===== */
 .slogan {
   text-align: center;
   padding: 60px 20px 70px;
   background: #fff;
 }
 
+/* Câu trích dẫn italic, font Playfair Display */
 .quote {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 42px;
   font-style: italic;
-  color: #c9a227;
+  color: #c9a227;            /* Màu vàng gold */
   margin-bottom: 20px;
 }
 
+/* Nguồn trích dẫn */
 .source {
   font-size: 26px;
   font-weight: 700;
@@ -197,6 +219,7 @@ a {
   margin-bottom: 50px;
 }
 
+/* 3 icon giá trị dàn ngang */
 .icons {
   display: flex;
   justify-content: center;
@@ -204,6 +227,7 @@ a {
   gap: 150px;
 }
 
+/* Mỗi icon + text mô tả */
 .icon-item {
   text-align: center;
   max-width: 220px;
@@ -217,13 +241,14 @@ a {
   line-height: 1.4;
 }
 
+/* Ảnh icon */
 .icon-img {
   width: 120px;
   height: 120px;
   object-fit: contain;
 }
 
-/* VOUCHER */
+/* ===== VOUCHER: Ảnh banner khuyến mãi full width ===== */
 .voucher {
   text-align: center;
 }
@@ -233,13 +258,14 @@ a {
   display: block;
 }
 
-/* FOOTER */
+/* ===== FOOTER: Phần cuối trang ===== */
 .footer {
-  background: #3e2723;
+  background: #3e2723;       /* Nền nâu đậm */
   color: #fff;
   padding: 40px 60px;
 }
 
+/* Phần trên footer: logo + mô tả + nút liên hệ */
 .footer-top {
   display: flex;
   align-items: center;
@@ -247,18 +273,21 @@ a {
   margin-bottom: 30px;
 }
 
+/* Logo lớn ở footer */
 .footer-logo img {
   height: 70px;
 }
 
+/* Mô tả thương hiệu */
 .footer-desc {
   flex: 1;
   font-size: 22px;
   color: #ccc;
 }
 
+/* Nút "Liên hệ" */
 .btn-contact {
-  background: #e8a88a;
+  background: #e8a88a;       /* Màu cam nhạt */
   color: #333;
   padding: 14px 32px;
   border-radius: 6px;
@@ -270,6 +299,7 @@ a {
   background: #d4967a;
 }
 
+/* Phần dưới footer: 2 cột Social + Contact */
 .footer-bottom {
   border-top: 1px solid #5d4037;
   padding-top: 24px;
@@ -281,6 +311,7 @@ a {
   flex: 1;
 }
 
+/* Thông tin liên hệ */
 .footer-contact {
   font-size: 20px;
   color: #ccc;
@@ -296,12 +327,14 @@ a {
   color: #fff;
 }
 
+/* Tiêu đề cột (Social, Contact Us) */
 .social-title {
   font-weight: 700;
   margin-bottom: 14px;
   font-size: 22px;
 }
 
+/* Link mạng xã hội */
 .footer-bottom a {
   display: block;
   font-size: 20px;
@@ -313,10 +346,12 @@ a {
   color: #fff;
 }
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE: Tương thích màn hình nhỏ ===== */
+
+/* Tablet: <= 992px */
 @media (max-width: 992px) {
   .hero {
-    flex-direction: column;
+    flex-direction: column;   /* Chuyển hero thành dọc */
     text-align: center;
   }
   
@@ -331,7 +366,7 @@ a {
   }
   
   .products-content {
-    flex-direction: column;
+    flex-direction: column;   /* Danh mục + sản phẩm xếp dọc */
   }
   
   .category-list {
@@ -352,6 +387,7 @@ a {
   }
 }
 
+/* Mobile: <= 768px */
 @media (max-width: 768px) {
   .header {
     flex-wrap: wrap;
@@ -374,16 +410,13 @@ a {
     gap: 50px;
   }
   
-  .voucher h2 {
-    font-size: 32px;
-  }
-  
   .footer-top {
     flex-direction: column;
     text-align: center;
   }
 }
 
+/* Mobile nhỏ: <= 480px */
 @media (max-width: 480px) {
   .hero-text h1 {
     font-size: 18px;
@@ -392,14 +425,6 @@ a {
   .product-cards {
     flex-direction: column;
     align-items: center;
-  }
-  
-  .voucher-cards {
-    gap: 12px;
-  }
-  
-  .voucher-card {
-    width: calc(50% - 6px);
   }
   
   .icons {
