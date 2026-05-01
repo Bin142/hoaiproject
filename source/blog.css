@@ -1,0 +1,170 @@
+/* BREADCRUMB */
+.breadcrumb {
+  padding: 16px 50px;
+  font-size: 14px;
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #999;
+}
+
+.breadcrumb a:hover {
+  color: #b5651d;
+}
+
+.breadcrumb span {
+  color: #333;
+}
+
+/* FEATURED POST */
+.featured-post {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 50px 50px;
+}
+
+.featured-img {
+  flex: 0 0 50%;
+}
+
+.featured-img img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.featured-content {
+  flex: 1;
+}
+
+.featured-content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.featured-content p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.btn-read {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #b5651d;
+  border-bottom: 2px solid #b5651d;
+  padding-bottom: 2px;
+}
+
+.btn-read:hover {
+  color: #8b4513;
+  border-color: #8b4513;
+}
+
+/* BLOG CATEGORY SECTIONS */
+.blog-category {
+  padding: 30px 50px;
+}
+
+.blog-category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 12px;
+}
+
+.blog-category-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.view-all {
+  font-size: 16px;
+  color: #b5651d;
+  font-weight: 500;
+}
+
+.view-all:hover {
+  color: #8b4513;
+}
+
+/* BLOG LIST */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-card {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.blog-card img {
+  width: 260px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.blog-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.blog-tag {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b5651d;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #999;
+}
+
+.blog-card-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-card-body p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.read-more {
+  font-size: 16px;
+  font-weight: 700;
+  color: #b5651d;
+}
+
+.read-more:hover {
+  color: #8b4513;
+}
